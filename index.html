@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>BMI Calculator</title>
+</head>
+<body>
+ <div class="bmi-container">
+    <header>
+        <h1 class="head">Body Mass Index(BMI) Calculator</h1>
+    </header>
+     <div class="calculator">
+     <form class="form">
+
+        <!-- Weight Form -->
+         <div class="weight-form">
+         <label for="weight" class="weightLabel"><span id="wt">Weight:</span> </label><br>
+            <div class="divweight">
+            <input name="number" id="weightNum" placeholder="Weight">
+            <select id="unit">
+                <option>Select</option> 
+                <option value="kg">Kg</option>
+                <option value="lb">lb</option>
+            </select>
+            </div>
+         </div>
+
+         <!-- Height form -->
+         <div class="height-form">
+         <label for="height" id="heightNum" class="heightLabel">Height: </label>
+               <div class="option">
+                <span class="desc">(in ft & inches)</span>
+                  <span>
+                    <select id="heightFt">
+                        <option>Select</option> 
+                        <option value="3">3'</option> 
+                        <option value="4">4'</option>
+                        <option value="5">5'</option>
+                        <option value="6">6'</option>
+                        <option value="7">7'</option>
+                    </select>
+                    <select id="heightInch">
+                        <option>Select</option> 
+                        <option value="1">1"</option>
+                        <option value="2">2"</option>
+                        <option value="3">3"</option>
+                        <option value="4">4"</option>
+                        <option value="5">5"</option>
+                        <option value="6">6"</option>
+                        <option value="7">7"</option>
+                        <option value="8">8"</option>
+                        <option value="9">9"</option>
+                        <option value="10">10"</option>
+                        <option value="11">11"</option>
+                        <option value="12">12"</option>
+                    </select>
+                    </span>
+               </div>
+         </div>
+
+         <h3 class="choice">Or</h3>
+         <!-- Centimer height form -->
+         <div class="height-form2">
+             <div class="flex2">
+            <span id="or">(in centimeters or meter)</span>
+            <span>
+            <input name="number" id="heightcmmtr" placeholder="Height">
+            <select id="cmMtr" class="cmMtr">
+                <option>Select</option> 
+                <option value="cm">Centimeters</option>
+                <option value="meter">Meters</option>
+            </select>
+            </span>
+            </div>
+         </div>
+     </form>
+
+     <button type="submit" class="submitBtn">Calculate BMI</button>
+    </div>
+    <div class="finalResult"></div>
+ </div>
+ <div class="copyright-container">
+  <footer>
+      <p>Utsav &copy; 2020 All rights reserved</p>
+  </footer>
+ </div>
+    <script src="app.js"></script>
+</body>
+</html>
